@@ -1,16 +1,11 @@
 @import "../core/variables";
+@import "../core/utilities";
 
 .container {
-  display: flex;
+  @extend .containerProps;
+
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   height: 100vh;
-  max-width: $max-width;
-  margin: 0 auto;
-  padding: 0 1rem;
-
   text-align: center;
 
   img {

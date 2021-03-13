@@ -1,0 +1,61 @@
+@import "../core/variables";
+
+.history {
+  margin-top: 3.75rem;
+
+  h4 {
+    font-size: 1.12rem;
+    color: $text;
+    font-weight: normal;
+  }
+
+  .historyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-top: 1.8rem;
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      background-color: $white;
+      padding: 1rem 0.8rem;
+      border-radius: 4px;
+
+      > span {
+        width: 35px;
+        height: 35px;
+        border-radius: 4px;
+        padding: 1.8rem;
+        font-size: 2.4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $primary;
+        color: $white;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+
+        > span:first-child {
+          font-weight: 800;
+        }
+
+        span:last-child {
+          font-size: 0.9rem;
+
+          span {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

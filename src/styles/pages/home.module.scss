@@ -1,0 +1,61 @@
+@import "../core/variables";
+@import "../core/utilities";
+
+.container {
+  @extend .containerProps;
+  align-items: flex-start;
+  padding: 2.5rem 0;
+  gap: 6.25rem;
+
+  .leftSection {
+    h3 {
+      font-weight: 300;
+      font-size: 1.5rem;
+      max-width: 80%;
+    }
+
+    main {
+      padding: 5rem 0;
+
+      .action {
+        display: flex;
+        gap: 1.7rem;
+        margin-top: 3.75rem;
+
+        div {
+          width: 155px;
+          height: 155px;
+          border-radius: 50%;
+          background-color: $white;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span:first-child {
+            color: $primary;
+            font-size: 4.2rem;
+            margin-bottom: 0.5rem;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .rightSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9.85rem;
+
+    img {
+      width: 600px;
+      max-width: 100%;
+    }
+  }
+}

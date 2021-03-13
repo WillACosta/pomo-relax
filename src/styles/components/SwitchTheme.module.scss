@@ -1,0 +1,17 @@
+@import "../core/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  span:first-child {
+    font-size: 2rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: darken($color: $background-black, $amount: 6);
+  }
+}
