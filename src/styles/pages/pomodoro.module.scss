@@ -1,0 +1,68 @@
+@import "../core/variables";
+
+.back {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  margin-bottom: 2.25rem;
+
+  &:hover {
+    cursor: pointer;
+    color: darken($color: $background-black, $amount: 6);
+  }
+}
+
+.infoText {
+  display: flex;
+  margin-bottom: 3.75rem;
+}
+
+.cicle {
+  margin-bottom: 1.25rem;
+
+  > div {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+
+    div {
+      width: 20px;
+      height: 20px;
+      background-color: $white;
+      border-radius: 50px;
+    }
+  }
+}
+
+.timer {
+  margin-bottom: 5rem;
+
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 8.5rem;
+
+  > div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $white;
+
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    text-align: center;
+
+    span {
+      flex: 1;
+
+      &:first-child {
+        border-right: 1px solid $background;
+      }
+
+      &:last-child {
+        border-left: 1px solid $background;
+      }
+    }
+  }
+}

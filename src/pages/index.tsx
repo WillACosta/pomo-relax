@@ -1,24 +1,7 @@
-import { useRouter } from 'next/router';
-
 import styles from '../styles/pages/intro.module.scss';
+import Link from 'next/link';
 
 export default function Home() {
-
-  const Link = ({ children, href }) => {
-    const router = useRouter()
-    return (
-      <a
-        href="#"
-        onClick={(e) => {
-          e.preventDefault()
-          router.push(href)
-        }}
-      >
-        {children}
-      </a>
-    )
-  }
-
   return (
     <div className={styles.container}>
       <img src="/img/intro.svg" alt="Ilustração de uma mulher praticando yoga" />
@@ -28,6 +11,7 @@ export default function Home() {
       <Link href="/home">
         <button className="btn-primary">
           Começar
+          <span className="material-icons">keyboard_arrow_right</span>
         </button>
       </Link>
     </div>

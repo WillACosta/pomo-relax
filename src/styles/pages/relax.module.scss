@@ -1,0 +1,14 @@
+@import "../core/variables";
+
+.back {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: absolute;
+  padding: 2rem 0 0 2rem;
+
+  &:hover {
+    cursor: pointer;
+    color: darken($color: $background-black, $amount: 6);
+  }
+}

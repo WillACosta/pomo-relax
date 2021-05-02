@@ -1,7 +1,13 @@
+import { PomodoroProvider } from '../contexts/PomodoroContext';
+
 import '../styles/globals.scss';
 
-function Home({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({ Component, pageProps }) {
+  return (
+    <PomodoroProvider>
+      <Component {...pageProps} />
+    </PomodoroProvider>
+  )
 }
 
-export default Home
+export default App;

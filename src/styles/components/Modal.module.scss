@@ -1,0 +1,52 @@
+@import '../core/variables';
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem 3rem;
+  border-radius: 4px;
+  position: relative;
+  background-color: $white;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+  .body {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    img {
+      width: 20rem;
+      max-width: 100%;
+    }
+  }
+
+  .footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.25rem;
+  }
+}

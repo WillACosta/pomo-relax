@@ -7,7 +7,7 @@ export function History() {
 
       <div className={styles.historyContainer}>
         <div className={styles.item}>
-          <span className="material-icons">timer</span>
+          <span className="material-icons">alarm</span>
           <div className={styles.text}>
             <span>Pomodoro</span>
             <span>Você finalizou um ciclo de 4 pomodoros com sucesso, totalizando <span>2 horas</span> </span>
@@ -23,7 +23,7 @@ export function History() {
         </div>
 
         <div className={styles.item}>
-          <span className="material-icons">timer</span>
+          <span className="material-icons">alarm</span>
           <div className={styles.text}>
             <span>Pomodoro</span>
             <span>Você finalizou um ciclo de 4 pomodoros com sucesso, totalizando <span>2 horas</span> </span>
